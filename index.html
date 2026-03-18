@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloomGarden</title>
+    <link rel="shortcut icon" href="./img/hero-image.png" type="image/x-icon">
+
+
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+        .user{
+            height: 40px;
+            width: 40px;
+            border: 1px dashed purple;
+            margin-top: 12px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: purple;
+        }
+        .contact-buttom{
+            border-radius: 10px;
+            border: 1px dashed purple;
+        }
+        .span{
+            color: purple;
+            font-style: italic;
+        }
+        .bg-color{
+            height: 500px;
+            background-color: pink;
+            border-radius: 10px;
+    
+        }
+        #img{
+            padding-top: 193px;
+            margin-left: -60px;
+        }
+        .category1{
+            background-color: rgb(252, 209, 216);
+        }
+        .category2{
+            background-color: rgb(242, 242, 185);
+        }
+        .category3{
+            background: linear-gradient(to right,rgb(242, 242, 185), rgb(186, 186, 237));
+        }
+        .about-img{
+            margin-top: -250px;
+        }
+        .year{
+            margin-top: -200px;
+        }
+        .minus{
+            background-color: pink;
+        }
+        .summer-img{
+            height: 100px;
+        }
+
+        .border-bottom{
+            border: 2px dashed rgb(164, 101, 112);
+        }
+
+        @media (max-width:480px) {
+            .navbar-nav{
+                visibility: hidden;
+            }
+        }
+    </style>
+
+    <!-- Tailwind -->
+         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+    <!-- Bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+</head>
+<body>
+    <!-- Nav Section -->
+    <section>
+        <nav class="d-flex align-items-center justify-content-center w-100 h-100">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row py-2">
+                        <div class="col-md-3">
+                            <img src="./img/logo.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-6 navbar-nav">
+                            <ul class="navbar-nav d-flex flex-row gap-4 h-100 align-items-center fs-5">
+                            <li class="nav-item">
+                            <a class="nav-link" href="">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#shopping">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#blogs">Blogs</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Pages</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="col-md-3 d-flex gap-3 align-items-center query">
+                            <div class="">
+                                <a href="" class="user"><i class="bi bi-person fs-3 px-3 py-3"></i></a>
+                            </div>
+                            <div class="">
+                                <a href="" class="user"><i class="bi bi-cart fs-3 px-3 py-3"></i></a>
+                            </div>
+                            <div class="bg-danger-subtle mt-2 contact-buttom">
+                                <button class="px-4 py-2">Contact Us <i class="bi bi-hand-index"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- hero section -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-md-6 ">
+                    <div class="d-flex gap-4 float-end">
+                        <div class="mt-4 ">
+                            <img src="./img/flower-vector.png" alt="">
+                        </div>
+                        <div class="w-50 ">
+                            <img src="./img/image-vector-1.png" alt="" class="img-fluid float-end">
+                        </div>
+                    </div>
+                    <div class="mt-5 pt-5">
+                        <h1 class="mt-5">Bring the Outdoors in <br> with our <span class="span">beautiful Flowers</span> and plant</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, doloremque nihil. Autem sed consequatur voluptatem!</p>
+                    </div>
+                    <div class="d-flex gap-4">
+                        <div class="bg-danger-subtle mt-2 contact-buttom">
+                                <button class="px-4 py-2">Show now <i class="bi bi-leaf"></i></button>
+                        </div>
+                        <div class="bg-danger-subtle mt-2 contact-buttom">
+                            <button class="px-4 py-2">Contact Us<i class="bi bi-hand-index"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-center">
+                        <img src="./img/image-vector-3.png" alt="">
+                    </div>
+                    <div class="pb-5 ps-5">
+                        <img src="./img/flower-vector.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-color">
+                        <div class="d-flex float-end mt-5 ms">
+                            <img src="./img/image-vector-2.png" alt="" class="img-fluid w-50">
+                        </div>
+                        <div id="img">
+                            <img src="./img/hero-image.png" alt="" class="img-fluid w-75 h-50">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flower Varieties -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="d-flex gap-3 category1 py-2 px-4 rounded">
+                        <div class="col-6">
+                            <h4>Rose Varieties</h4>
+                            <p>Shop now</p>
+                        </div>
+                        <div>
+                            <img src="./img/category-01.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex gap-3 category2 py-2 px-4 rounded">
+                        <div class="col-6">
+                            <h4>Rose Varieties</h4>
+                            <p>Shop now</p>
+                        </div>
+                        <div>
+                            <img src="./img/category-02.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex gap-3 category3 py-2 px-4 rounded">
+                        <div class="col-6">
+                            <h4>Rose Varieties</h4>
+                            <p>Shop now</p>
+                        </div>
+                        <div>
+                            <img src="./img/category-03.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex gap-3 category2 py-2 px-4 rounded">
+                        <div class="col-6">
+                            <h4>Rose Varieties</h4>
+                            <p>Shop now</p>
+                        </div>
+                        <div>
+                            <img src="./img/category-04.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container-fluid">
+        <div class="container">
+            <div class="row py-5 g">
+                <div class="col-md-6">
+                    <div class="py-4">
+                        <h3>Bloom Chronicles Crafting <br> Beauty, <span class="span">One Flower</span> at a time</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem maxime ipsa nam! Impedit odit velit nihil adipisci, praesentium sapiente. Soluta tenetur quis voluptate quod voluptas dolorem impedit expedita ducimus temporibus natus blanditiis consectetur aspernatur nostrum quaerat, qui sequi odit atque ipsa. Saepe qui delectus, explicabo accusamus, quas facilis nam ea odit itaque officia adipisci optio? Deserunt hic harum repellendus fugit.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem maxime ipsa nam! Impedit odit velit nihil adipisci, praesentium sapiente. Soluta tenetur quis voluptate quod voluptas dolorem impedit expedita ducimus temporibus natus blanditiis consectetur aspernatur nostrum quaerat, qui sequi odit atque ipsa. Saepe qui delectus, explicabo accusamus, quas facilis nam ea odit itaque officia adipisci optio? Deserunt hic harum repellendus fugit.</p>
+                        <div class="bg-danger-subtle mt-4 contact-buttom w-25">
+                            <button class="px-3 py-2 ">Read more <i class="bi bi-book"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class=" ps-5">
+                        <img src="./img/about-1.png" alt="" class="img-fluid ">
+                    </div>
+                    <div class="about-img" >
+                        <img src="./img/about-1-object.png" alt="">
+                    </div>
+                    <!-- <div class="bg-danger-subtle year rounded-pill position-absolute mt-4 px-3 top-280 start-260 ">
+                        <button class="px-3 py-2">25 Year <br>Experience</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Featured Flower -->
+    <section id="shopping">
+        <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h1>Featured <span class="span">Flowers</span></h1>
+                </div>
+                <div class="col-6">
+                    <div class="bg-danger-subtle year d-flex float-end contact-buttom rounded-pill  mt-4 px-3 w-25">
+                    <button class="px-3 py-2">View All</button>
+                 </div>
+                </div>
+
+            </div>
+
+            <div class="row py-5">
+                <div class="col-md-3">
+                    <div class="contact-buttom">
+                        <div class="h-50">
+                            <img src="./img/pd-1.png" alt="" class="img-fluid h-50">
+                        </div>
+                        <div class="px-3 py-1 bg-danger-subtle rounded">
+                            <h4>Lily Lane</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <h3>$40.00</h3>
+                            <div class="row py-3">
+                                <div class="col-9">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="minus px-2 rounded fs-4 fw-bold text-white"><i class="bi bi-dash"></i></span> 
+                                        <span class="px-1 -mb-1 align-items-center">1</span>
+                                        <span class="minus px-2 rounded fs-4 fw-bold text-white"><i class="bi bi-plus"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="mt-1 d-flex align-items-center ">
+                                        <a href="" class="  text-white rounded"  style="background-color: #b86d6d;"><i class="bi bi-cart fs-5 px-2 py-3"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="contact-buttom">
+                        <div class="h-50">
+                            <img src="./img/pd-2.png" alt="" class="img-fluid h-50">
+                        </div>
+                        <div class="px-3 py-1 bg-danger-subtle rounded">
+                            <h4>Daisy Dreams</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <h3>$29.00</h3>
+                            <div class="row py-3">
+                                <div class="col-9">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="minus px-2 rounded fs-4 fw-bold text-white"><i class="bi bi-dash"></i></span> 
+                                        <span class="px-1 -mb-1 align-items-center">1</span>
+                                        <span class="minus px-2 rounded fs-4 fw-bold text-white"><i class="bi bi-plus"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="mt-1 d-flex align-items-center ">
+                                        <a href="" class="  text-white rounded"  style="background-color: #b86d6d;"><i class="bi bi-cart fs-5 px-2 py-3"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="contact-buttom">
+                        <div class="h-50">
+                            <img src="./img/pd-3.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="px-3 py-1 bg-danger-subtle rounded">
+                            <h4>Rose Varieties</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <h3>$19.00</h3>
+                            <div class="row py-3">
+                                <div class="col-9">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="minus px-2 rounded fs-4 fw-bold text-white"><i class="bi bi-dash"></i></span> 
+                                        <span class="px-1 -mb-1 align-items-center">1</span>
+                                        <span class="minus px-2 rounded fs-4 fw-bold text-white"><i class="bi bi-plus"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="mt-1 d-flex align-items-center ">
+                                        <a href="" class="  text-white rounded"  style="background-color: #b86d6d;"><i class="bi bi-cart fs-5 px-2 py-3"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="contact-buttom">
+                        <div class="h-50">
+                            <img src="./img/pd-4.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="px-3 py-1 bg-danger-subtle rounded">
+                            <h4>Rose Bloom</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <h3>$35.00</h3>
+                            <div class="row py-3">
+                                <div class="col-9">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="minus px-2 rounded fs-4 fw-bold text-white"><i class="bi bi-dash"></i></span> 
+                                        <span class="px-1 -mb-1 align-items-center">1</span>
+                                        <span class="minus px-2 rounded fs-4 fw-bold text-white"><i class="bi bi-plus"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="mt-1 d-flex align-items-center ">
+                                        <a href="" class="  text-white rounded"  style="background-color: #b86d6d;"><i class="bi bi-cart fs-5 px-2 py-3"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+            <!-- Shipping section -->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="contact-buttom">
+                        <div class="row py-3">
+                            <div class="col-3">
+                                <div class="px-4 py-3 fs-3 text-danger-emphasis">
+                                    <i class="bi bi-truck"></i>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <h4 class="text-danger-emphasis fw-semibold">Free Shipping</h4>
+                                <p>Enjoy Free Shipping</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="contact-buttom">
+                        <div class="row py-3">
+                            <div class="col-3">
+                                <div class="px-4 py-3 fs-3 text-danger-emphasis">
+                                    <i class="bi bi-people"></i>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <h4 class="text-danger-emphasis fw-semibold">Happy Client</h4>
+                                <p>Enjoy Free Shipping</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="contact-buttom">
+                        <div class="row py-3">
+                            <div class="col-3">
+                                <div class="px-4 py-3 fs-3 text-danger-emphasis">
+                                    <i class="bi bi-gift"></i>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <h4 class="text-danger-emphasis fw-semibold">Offer & Gift</h4>
+                                <p>Enjoy Free Shipping</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="contact-buttom">
+                        <div class="row py-3">
+                            <div class="col-3">
+                                <div class="px-4 py-3 fs-3 text-danger-emphasis">
+                                    <i class="bi bi-shield-lock"></i>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <h5 class="text-danger-emphasis fw-semibold">Secured Checkout</h5>
+                                <p>Enjoy Free Shipping</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- summer offer -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row py-3 mt-5 border-8 border-[#FFC0CB] rounded-4">
+                <div class="col-md-6">
+                    <div class=" text-center py-5">
+                        <p style="color: #5e025e;" class="fs-1 text-[#1d021d]">SPECIAL OFFER</p>
+                        <h1 style="color: #5e025e;" class="fs-1 text-[#1d021d]">SUMMER</h1>
+                        <h3 class="py-2">UP TO 50% OFF</h3>
+                        <p class="px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat porro tempore repudiandae deserunt repellendus suscipit alias consequuntur, accusamus ad expedita deleniti voluptates officia debitis eum ex aliquid, sapiente laborum! Ullam.</p>
+                        <div class="bg-danger-subtle mt-2 mt-4 w-25 mx-auto text-center contact-buttom">
+                            <button class="px-4 py-2 ">Show now </i></button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <div class="">
+                        <img src="./img/banner-img-xl.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Client -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row py-3">
+                <div class="text-center">
+                    <h1 class="pt-5" style="color: #5e025e;">Words from <span style="color: pink;">Our Clients</span></h1>
+                </div>
+            </div>
+
+            <div class="row my-3">
+                <div class="col-md-6">
+                    <div class="contact-buttom">
+                        <div class="row my-2 ">
+                        <div class="col-5">
+                            <div class="py-3 ms-5">
+                                <img src="./img/t-1.png" alt="" class="img-fluid rounded-4">
+                            </div>
+                        </div>
+                        <div class="col-7 mt-3">
+                            <div class="d-flex flex-column">                                
+                                <div style="color: #5e025e;">
+                                    <p class="fs-4 mb-0">Anjali Nirala <span class="fs-6 text-secondary">- Customer</span></p>
+                                </div>
+                                <!-- Stars -->
+                                <div class="d-flex gap-2 mt-0">
+                                    <div class="text-[#5e025e] fs-5"><i class="bi bi-star-fill"></i></div>
+                                    <div class="text-[#5e025e] fs-5"><i class="bi bi-star-fill"></i></div>
+                                    <div class="text-[#5e025e] fs-5"><i class="bi bi-star-fill"></i></div>
+                                    <div class="text-[#5e025e] fs-5"><i class="bi bi-star-fill"></i></div>
+                                    <div class="text-[#5e025e] fs-5"><i class="bi bi-star-fill"></i></div>
+                                </div>
+                                <!-- Paragraph -->
+                                <div>
+                                    <p class="text-secondary py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vero esse Lorem ipsum dolor sit amet  rem</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-buttom">
+                        <div class="row my-2 ">
+                        <div class="col-5">
+                            <div class="py-3 ms-5">
+                                <img src="./img/t-2.png" alt="" class="img-fluid rounded-4">
+                            </div>
+                        </div>
+                        <div class="col-7 mt-3">
+                            <div class="d-flex flex-column">                                
+                                <div style="color: #5e025e;">
+                                    <p class="fs-4 mb-0">Manisha Nirala <span class="fs-6 text-secondary">- Customer</span></p>
+                                </div>
+                                <!-- Stars -->
+                                <div class="d-flex gap-2 mt-0">
+                                    <div class="text-[#5e025e] fs-5"><i class="bi bi-star-fill"></i></div>
+                                    <div class="text-[#5e025e] fs-5"><i class="bi bi-star-fill"></i></div>
+                                    <div class="text-[#5e025e] fs-5"><i class="bi bi-star-fill"></i></div>
+                                    <div class="text-[#5e025e] fs-5"><i class="bi bi-star-fill"></i></div>
+                                    <div class="text-[#5e025e] fs-5"><i class="bi bi-star-fill"></i></div>
+                                </div>
+                                <!-- Paragraph -->
+                                <div>
+                                    <p class="text-secondary py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vero esse Lorem ipsum dolor sit amet  rem</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Articles -->
+    <section id="blogs">
+        <div class="container-fluid">
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-6">
+                    <h1>Our Latest <span class="span">Articles</span></h1>
+                </div>
+                <div class="col-6">
+                    <div class="bg-danger-subtle year d-flex float-end contact-buttom rounded-pill  mt-4 px-3 w-25">
+                    <button class="px-2 py-2">View All <i class="bi bi-leaf-fill"></i></button>
+                 </div>
+                </div>
+            </div>
+
+            <!-- Main part -->
+             <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-buttom">
+                        <div class="">
+                            <img src="./img/b-1.png" alt=" " class="img-fluid rounded">
+                        </div>
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="px-2 py-3 d-flex gap-3 align-items-center">
+                                    <div>
+                                        <img src="./img/ua-1.png" alt="">
+                                    </div>
+                                    <p style="color: rgb(247, 142, 159);">By: Williams</p>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="me-2">
+                                    <div class=" mt-4 contact-buttom">
+                                        <button class="px-2 py-1 text-secondary">14 April, 2025</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 style="color: #5e025e;" class="px-2">A Beginner's Guide to Flower Arranging Tips and Tricks </h4>
+                        <p class="px-2">Lorem ipsum dolor sit amet consectetur adipis elit. Libero officia maiores aut pariatur quis.</p>
+                        <div class="bg-danger-subtle mx-auto my-4 contact-buttom w-50">
+                            <button class="px-4 py-2 fs-5">Read more <i class="bi bi-book"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-buttom">
+                        <div class="">
+                            <img src="./img/b-2.png" alt=" " class="img-fluid rounded">
+                        </div>
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="px-2 py-3 d-flex gap-3 align-items-center">
+                                    <div>
+                                        <img src="./img/ua-2.png" alt="">
+                                    </div>
+                                    <p style="color: rgb(247, 142, 159);">By: Williams</p>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="me-2">
+                                    <div class=" mt-4 contact-buttom">
+                                        <button class="px-2 py-1 text-secondary">14 April, 2025</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 style="color: #5e025e;" class="px-2">Exploring the Symbolism of Different Flowers</h4>
+                        <p class="px-2">Lorem ipsum dolor sit amet consectetur adipis elit. Libero officia maiores aut pariatur quis.</p>
+                        <div class="bg-danger-subtle mx-auto my-4 contact-buttom w-50">
+                            <button class="px-4 py-2 fs-5">Read more <i class="bi bi-book"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-buttom">
+                        <div class="">
+                            <img src="./img/b-3.png" alt=" " class="img-fluid rounded">
+                        </div>
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="px-2 py-3 d-flex gap-3 align-items-center">
+                                    <div>
+                                        <img src="./img/ua-3.png" alt="">
+                                    </div>
+                                    <p style="color: rgb(247, 142, 159);">By: Williams</p>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="me-2">
+                                    <div class=" mt-4 contact-buttom">
+                                        <button class="px-2 py-1 text-secondary">14 April, 2025</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 style="color: #5e025e;" class="px-2">DIY Flower Crafts: Creative Projects for Flower Enthusiasts </h4>
+                        <p class="px-2">Lorem ipsum dolor sit amet consectetur adipis elit. Libero officia maiores aut pariatur quis.</p>
+                        <div class="bg-danger-subtle mx-auto my-4 contact-buttom w-50">
+                            <button class="px-4 py-2 fs-5">Read more <i class="bi bi-book"></i></button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    </section>
+    <!-- Newletter -->
+    <section >
+        <div class="container-fluid -mb-5">
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="contact-buttom">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="py-2 px-3">
+                                    <h2>Subscribe to our newsletter</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa quisquam repudiandae ullam, autem impedit sint.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex gap-2 ms-5 mt-4 align-items-center">
+                                    <div class=" mt-4 contact-buttom w-50">
+                                        <input class="px-3 py-2" type="email" placeholder="Your Email">
+                                    </div>
+                                    <div class="bg-danger-subtle mt-4 contact-buttom w">
+                            <button class="px-3 py-2 ">Read more <i class="bi bi-hand-index"></i></button>
+                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="contact">
+        <div class="container-fluid bg-danger-subtle pt-5 -mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div>
+                        <div>
+                            <img src="./img/logo.png" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quisquam tempore, aperiam soluta dolor quam, laborum veritatis bcum omnis evenie!</p>
+                        <div class="d-flex gap-3 align-items-center">
+                            <div class="bg-danger-subtle rounded-circle px-2 py-1"><i class="bi bi-stopwatch fs-4"></i></div>
+                            <p>MON - FRI <br>08:00 AM - 05:00 PM</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="px-1">
+                        <h3>Useful Links</h3>
+                        <div class=" mt-4">
+                            <a href="" class="text-decoration-none text-secondary">About Us</a>
+                        </div>
+                        <div class="py-2">
+                            <a href="" class="text-decoration-none text-secondary">Product Items</a>
+                        </div>
+                        <div>
+                            <a href="" class="text-decoration-none text-secondary">Contact Us</a>
+                        </div>
+                        <div class="py-2">
+                            <a href="" class="text-decoration-none text-secondary">Checkout</a>
+                        </div>
+                        <div>
+                            <a href="" class="text-decoration-none text-secondary">Wishlist</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="px-4">
+                        <h3>Information</h3>
+                        <div class="mt-4">
+                            <a href="" class="text-decoration-none text-secondary">About Us</a>
+                        </div>
+                        <div class="py-2">
+                            <a href="" class="text-decoration-none text-secondary">Product Items</a>
+                        </div>
+                        <div>
+                            <a href="" class="text-decoration-none text-secondary">Contact Us</a>
+                        </div>
+                        <div class="py-2">
+                            <a href="" class="text-decoration-none text-secondary">Checkout</a>
+                        </div>
+                        <div>
+                            <a href="" class="text-decoration-none text-secondary">Wishlist</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="px-5">
+                        <h3>Contact Us</h3>
+                        <div class="mt-4 d-flex gap-2 align-items-center">
+                            <div class="bg-danger-subtle rounded-circle py-1">
+                                <i class="bi bi-telephone px-2 py-2"></i>
+                            </div>
+                            <div class=""> 
+                                <a href="tel:++91 8006354789" class="text-decoration-none text-black">+91 8006354789</a>
+                            </div>
+                        </div>
+                        <div class="mt-3 d-flex gap-2 align-items-center">
+                            <div class="bg-danger-subtle rounded-circle py-1">
+                                <i class="bi bi-envelope px-2 py-2"></i>
+                            </div>
+                            <div class=""> 
+                                <a href="mailto:example@gmail.com" class="text-decoration-none text-black">example@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <div class="bg-danger-subtle rounded-circle py-1">
+                                <i class="bi bi-geo-alt px-2 py-2"></i>
+                            </div>
+                            <div class="mt-2"> 
+                                <p>Ram ram chauraha Aliganj , Lucknow</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-4 px-4 fs-4 ">
+                            <a href="" class="text-danger-emphasis"><i class="bi bi-facebook"></i></a>
+                            <a href="" class="text-danger-emphasis"><i class="bi bi-twitter-x"></i></a>
+                            <a href="" class="text-danger-emphasis"><i class="bi bi-instagram"></i></a>
+                            <a href="" class="text-danger-emphasis"><i class="bi bi-linkedin"></i></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- lower footer -->
+            <div class="border-bottom mt-3"></div>
+            <div class="text-center py-3 text-danger-emphasis fs-5">
+                <p>@2026 All Rights Copyright Digicoders. Design & Developed By Sudheer Pal</p>
+            </div>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
