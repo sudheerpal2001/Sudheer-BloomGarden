@@ -30,15 +30,23 @@
         .user i:hover{
             background-color: #f8d7da;
         }
-        .contact-button button{
-            border: none;
-            background-color: #f8d7da;
-            border-radius: 5px;
-        }
-        .contact-buttom{
-            border-radius: 10px;
-            border: 1px dashed purple;
-        }
+
+        .contact-button button,
+            .contact-buttom button {
+                border: none;
+                background-color: #f8d7da;
+                border-radius: 6px ;
+                transition: 0.3s;
+            }
+
+            button:focus {
+                outline: none;
+                box-shadow: none;
+            }
+            .contact-button{
+                border: 1.5px dashed rgb(242, 154, 169);
+                border-radius: 10px;
+            }
         .span{
             color: purple;
             font-style: italic;
@@ -64,6 +72,31 @@
         }
         .about-img{
             margin-top: -250px;
+        }
+
+        .contact-buttom {
+            border: 1px solid #f1c6cc;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        /* 🔥 Shadow effect */
+        .contact-buttom:hover {
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+        }
+
+        .contact-button input {
+            border: none;
+        }
+
+        .contact-button input:focus {
+            outline: none;
+            box-shadow: none;
+            border: none;
+        }
+        .custom-border {
+            border: 6px solid #FFC0CB;
         }
         .year{
             margin-top: -200px;
@@ -97,55 +130,55 @@
     <!-- Nav Section -->
     <section>
         <!-- ✅ Navbar Start -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
-        <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+                <div class="container">
 
-        <!-- Logo -->
-        <a class="navbar-brand" href="#">
-            <img src="./img/logo.png" alt="logo" width="120">
-        </a>
-
-        <!-- Hamburger Button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Menu -->
-        <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
-
-            <!-- Links -->
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4 text-center">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#shopping">Shop</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
-            </ul>
-
-            <!-- Right Icons -->
-            <div class="d-flex align-items-center gap-3 justify-content-center mt-3 mt-lg-0">
-                
-                <a href="#" class="user">
-                    <i class="bi bi-person fs-4 p-2"></i>
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.png" alt="logo" width="120">
                 </a>
 
-                <a href="#" class="user">
-                    <i class="bi bi-cart fs-4 p-2"></i>
-                </a>
+                <!-- Hamburger Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <div class="contact-button">
-                    <button class="px-3 py-2">
-                        Contact Us <i class="bi bi-hand-index"></i>
-                    </button>
+                <!-- Menu -->
+                <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+
+                    <!-- Links -->
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4 text-center">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#shopping">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    </ul>
+
+                    <!-- Right Icons -->
+                    <div class="d-flex align-items-center gap-3 justify-content-center mt-3 mt-lg-0">
+                        
+                        <a href="#" class="user">
+                            <i class="bi bi-person fs-4 p-2"></i>
+                        </a>
+
+                        <a href="#" class="user">
+                            <i class="bi bi-cart fs-4 p-2"></i>
+                        </a>
+
+                        <div class="contact-button">
+                            <button class="px-3 py-2 rounded-3">
+                                Contact Us <i class="bi bi-hand-index"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
                 </div>
-
             </div>
-
-        </div>
-    </div>
-</nav>
-<!-- ✅ Navbar End -->
+        </nav>
+        <!-- ✅ Navbar End -->
     </section>
 
     <!-- hero section -->
@@ -166,10 +199,10 @@
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, doloremque nihil. Autem sed consequatur voluptatem!</p>
                     </div>
                     <div class="d-flex gap-4">
-                        <div class="bg-danger-subtle mt-2 contact-buttom">
+                        <div class="bg-danger-subtle mt-2 contact-button rounded-3">
                                 <button class="px-4 py-2">Show now <i class="bi bi-leaf"></i></button>
                         </div>
-                        <div class="bg-danger-subtle mt-2 contact-buttom">
+                        <div class="bg-danger-subtle mt-2 contact-button rounded-3">
                             <button class="px-4 py-2">Contact Us<i class="bi bi-hand-index"></i></button>
                         </div>
                     </div>
@@ -199,36 +232,36 @@
     <div class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 mb-2">
                     <div class="d-flex gap-3 category1 py-2 px-4 rounded">
                         <div class="col-6">
                             <h4>Rose Varieties</h4>
                             <p>Shop now</p>
                         </div>
                         <div>
-                            <img src="./img/category-01.png" alt="">
+                            <img src="./img/category-01.png" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mb-2">
                     <div class="d-flex gap-3 category2 py-2 px-4 rounded">
                         <div class="col-6">
                             <h4>Rose Varieties</h4>
                             <p>Shop now</p>
                         </div>
                         <div>
-                            <img src="./img/category-02.png" alt="">
+                            <img src="./img/category-02.png" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mb-2">
                     <div class="d-flex gap-3 category3 py-2 px-4 rounded">
                         <div class="col-6">
                             <h4>Rose Varieties</h4>
                             <p>Shop now</p>
                         </div>
                         <div>
-                            <img src="./img/category-03.png" alt="">
+                            <img src="./img/category-03.png" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -239,7 +272,7 @@
                             <p>Shop now</p>
                         </div>
                         <div>
-                            <img src="./img/category-04.png" alt="">
+                            <img src="./img/category-04.png" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -257,7 +290,7 @@
                         <h3>Bloom Chronicles Crafting <br> Beauty, <span class="span">One Flower</span> at a time</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem maxime ipsa nam! Impedit odit velit nihil adipisci, praesentium sapiente. Soluta tenetur quis voluptate quod voluptas dolorem impedit expedita ducimus temporibus natus blanditiis consectetur aspernatur nostrum quaerat, qui sequi odit atque ipsa. Saepe qui delectus, explicabo accusamus, quas facilis nam ea odit itaque officia adipisci optio? Deserunt hic harum repellendus fugit.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem maxime ipsa nam! Impedit odit velit nihil adipisci, praesentium sapiente. Soluta tenetur quis voluptate quod voluptas dolorem impedit expedita ducimus temporibus natus blanditiis consectetur aspernatur nostrum quaerat, qui sequi odit atque ipsa. Saepe qui delectus, explicabo accusamus, quas facilis nam ea odit itaque officia adipisci optio? Deserunt hic harum repellendus fugit.</p>
-                        <div class="bg-danger-subtle mt-4 contact-buttom w-25">
+                        <div class="bg-danger-subtle mt-4 contact-button rounded-3 d-inline-block">
                             <button class="px-3 py-2 ">Read more <i class="bi bi-book"></i></button>
                         </div>
                     </div>
@@ -287,15 +320,15 @@
                     <h1>Featured <span class="span">Flowers</span></h1>
                 </div>
                 <div class="col-6">
-                    <div class="bg-danger-subtle year d-flex float-end contact-buttom rounded-pill  mt-4 px-3 w-25">
-                    <button class="px-3 py-2">View All</button>
+                    <div class="bg-danger-subtle year d-flex float-end contact-button rounded-pill  mt-4 px-3">
+                    <button class="px-1 py-2">View All <i class="bi bi-leaf"></i></button>
                  </div>
                 </div>
 
             </div>
 
             <div class="row py-5">
-                <div class="col-md-3">
+                <div class="col-md-3 mb-2">
                     <div class="contact-buttom">
                         <div class="h-50">
                             <img src="./img/pd-1.png" alt="" class="img-fluid h-50">
@@ -321,7 +354,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mb-2">
                     <div class="contact-buttom">
                         <div class="h-50">
                             <img src="./img/pd-2.png" alt="" class="img-fluid h-50">
@@ -347,7 +380,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mb-2">
                     <div class="contact-buttom">
                         <div class="h-50">
                             <img src="./img/pd-3.png" alt="" class="img-fluid">
@@ -373,7 +406,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mb-2">
                     <div class="contact-buttom">
                         <div class="h-50">
                             <img src="./img/pd-4.png" alt="" class="img-fluid">
@@ -403,7 +436,7 @@
             </div>
             <!-- Shipping section -->
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 mb-2">
                     <div class="contact-buttom">
                         <div class="row py-3">
                             <div class="col-3">
@@ -418,7 +451,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mb-2">
                     <div class="contact-buttom">
                         <div class="row py-3">
                             <div class="col-3">
@@ -433,7 +466,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mb-2">
                     <div class="contact-buttom">
                         <div class="row py-3">
                             <div class="col-3">
@@ -448,7 +481,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mb-2">
                     <div class="contact-buttom">
                         <div class="row py-3">
                             <div class="col-3">
@@ -471,7 +504,7 @@
     <!-- summer offer -->
     <div class="container-fluid">
         <div class="container">
-            <div class="row py-3 mt-5 border-8 border-[#FFC0CB] rounded-4">
+            <div class="row py-2 mt-5 custom-border rounded-4">
                 <div class="col-md-6">
                     <div class=" text-center py-5">
                         <p style="color: #5e025e;" class="fs-1 text-[#1d021d]">SPECIAL OFFER</p>
@@ -503,7 +536,7 @@
             </div>
 
             <div class="row my-3">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-2">
                     <div class="contact-buttom">
                         <div class="row my-2 ">
                         <div class="col-5">
@@ -517,12 +550,12 @@
                                     <p class="fs-4 mb-0">Anjali Nirala <span class="fs-6 text-secondary">- Customer</span></p>
                                 </div>
                                 <!-- Stars -->
-                                <div class="d-flex gap-2 mt-0">
-                                    <div class="text-[#5e025e] fs-5"><i class="bi bi-star-fill"></i></div>
-                                    <div class="text-[#5e025e] fs-5"><i class="bi bi-star-fill"></i></div>
-                                    <div class="text-[#5e025e] fs-5"><i class="bi bi-star-fill"></i></div>
-                                    <div class="text-[#5e025e] fs-5"><i class="bi bi-star-fill"></i></div>
-                                    <div class="text-[#5e025e] fs-5"><i class="bi bi-star-fill"></i></div>
+                                <div class="d-flex gap-2 mt-0" style="color:#5e025e;" ✅>
+                                    <div class=" fs-5"><i class="bi bi-star-fill"></i></div>
+                                    <div class=" fs-5"><i class="bi bi-star-fill"></i></div>
+                                    <div class="fs-5"><i class="bi bi-star-fill"></i></div>
+                                    <div class=" fs-5"><i class="bi bi-star-fill"></i></div>
+                                    <div class="fs-5"><i class="bi bi-star-fill"></i></div>
                                 </div>
                                 <!-- Paragraph -->
                                 <div>
@@ -548,12 +581,12 @@
                                     <p class="fs-4 mb-0">Manisha Nirala <span class="fs-6 text-secondary">- Customer</span></p>
                                 </div>
                                 <!-- Stars -->
-                                <div class="d-flex gap-2 mt-0">
-                                    <div class="text-[#5e025e] fs-5"><i class="bi bi-star-fill"></i></div>
-                                    <div class="text-[#5e025e] fs-5"><i class="bi bi-star-fill"></i></div>
-                                    <div class="text-[#5e025e] fs-5"><i class="bi bi-star-fill"></i></div>
-                                    <div class="text-[#5e025e] fs-5"><i class="bi bi-star-fill"></i></div>
-                                    <div class="text-[#5e025e] fs-5"><i class="bi bi-star-fill"></i></div>
+                                <div class="d-flex gap-2 mt-0 " style="color:#5e025e;" ✅>
+                                    <div class="fs-5"><i class="bi bi-star-fill"></i></div>
+                                    <div class="fs-5"><i class="bi bi-star-fill"></i></div>
+                                    <div class="fs-5"><i class="bi bi-star-fill"></i></div>
+                                    <div class=" fs-5"><i class="bi bi-star-fill"></i></div>
+                                    <div class=" fs-5"><i class="bi bi-star-fill"></i></div>
                                 </div>
                                 <!-- Paragraph -->
                                 <div>
@@ -578,8 +611,8 @@
                     <h1>Our Latest <span class="span">Articles</span></h1>
                 </div>
                 <div class="col-6">
-                    <div class="bg-danger-subtle year d-flex float-end contact-buttom rounded-pill  mt-4 px-3 w-25">
-                    <button class="px-2 py-2">View All <i class="bi bi-leaf-fill"></i></button>
+                    <div class="bg-danger-subtle year d-flex float-end contact-button rounded-pill  mt-4 px-3">
+                    <button class="px-1 py-2">View All <i class="bi bi-leaf-fill"></i></button>
                  </div>
                 </div>
             </div>
@@ -602,7 +635,7 @@
                             </div>
                             <div class="col-5">
                                 <div class="me-2">
-                                    <div class=" mt-4 contact-buttom">
+                                    <div class=" mt-4 contact-button rounded-3">
                                         <button class="px-2 py-1 text-secondary">14 April, 2025</button>
                                     </div>
                                 </div>
@@ -610,7 +643,7 @@
                         </div>
                         <h4 style="color: #5e025e;" class="px-2">A Beginner's Guide to Flower Arranging Tips and Tricks </h4>
                         <p class="px-2">Lorem ipsum dolor sit amet consectetur adipis elit. Libero officia maiores aut pariatur quis.</p>
-                        <div class="bg-danger-subtle mx-auto my-4 contact-buttom w-50">
+                        <div class="bg-danger-subtle mx-auto my-4 contact-button rounded-3 d-inline-block">
                             <button class="px-4 py-2 fs-5">Read more <i class="bi bi-book"></i></button>
                         </div>
                     </div>
@@ -631,7 +664,7 @@
                             </div>
                             <div class="col-5">
                                 <div class="me-2">
-                                    <div class=" mt-4 contact-buttom">
+                                    <div class=" mt-4 contact-button rounded-3">
                                         <button class="px-2 py-1 text-secondary">14 April, 2025</button>
                                     </div>
                                 </div>
@@ -639,7 +672,7 @@
                         </div>
                         <h4 style="color: #5e025e;" class="px-2">Exploring the Symbolism of Different Flowers</h4>
                         <p class="px-2">Lorem ipsum dolor sit amet consectetur adipis elit. Libero officia maiores aut pariatur quis.</p>
-                        <div class="bg-danger-subtle mx-auto my-4 contact-buttom w-50">
+                        <div class="bg-danger-subtle mx-auto my-4 contact-button rounded-3 d-inline-block">
                             <button class="px-4 py-2 fs-5">Read more <i class="bi bi-book"></i></button>
                         </div>
                     </div>
@@ -660,7 +693,7 @@
                             </div>
                             <div class="col-5">
                                 <div class="me-2">
-                                    <div class=" mt-4 contact-buttom">
+                                    <div class=" mt-4 contact-button rounded-3">
                                         <button class="px-2 py-1 text-secondary">14 April, 2025</button>
                                     </div>
                                 </div>
@@ -668,7 +701,7 @@
                         </div>
                         <h4 style="color: #5e025e;" class="px-2">DIY Flower Crafts: Creative Projects for Flower Enthusiasts </h4>
                         <p class="px-2">Lorem ipsum dolor sit amet consectetur adipis elit. Libero officia maiores aut pariatur quis.</p>
-                        <div class="bg-danger-subtle mx-auto my-4 contact-buttom w-50">
+                        <div class="bg-danger-subtle mx-auto my-4 contact-button rounded-3 d-inline-block">
                             <button class="px-4 py-2 fs-5">Read more <i class="bi bi-book"></i></button>
                         </div>
                     </div>
@@ -693,13 +726,13 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="d-flex gap-2 ms-5 mt-4 align-items-center">
-                                    <div class=" mt-4 contact-buttom w-50">
-                                        <input class="px-3 py-2" type="email" placeholder="Your Email">
+                                <div class="d-flex gap-3 ms-5 mt-4 align-items-center">
+                                    <div class=" mt-4 contact-button rounded-3">
+                                        <input class="px-3 py-2 rounded-3" type="email" placeholder="Your Email">
                                     </div>
-                                    <div class="bg-danger-subtle mt-4 contact-buttom w">
-                            <button class="px-3 py-2 ">Read more <i class="bi bi-hand-index"></i></button>
-                        </div>
+                                    <div class="bg-danger-subtle mt-4 contact-button rounded-3">
+                                        <button class="px-3 py-2 ">Subscribe</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
